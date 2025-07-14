@@ -1,0 +1,109 @@
+{% extends 'logistics/base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Banner -->
+<div class="banner"
+    style="height: 450px; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{% static 'images/home-banner.jpeg' %}') center/cover no-repeat;">
+    <div class="container h-100 d-flex align-items-center">
+        <div class="text-white text-center mx-auto" style="max-width: 800px;">
+
+            <h1 class="display-3 fw-bold mb-4">Connecting Farms to Markets</h1>
+            <p class="lead mb-5">Efficient, sustainable agricultural logistics solutions that bridge the gap between
+                producers and consumers.</p>
+
+            <a href="{% url 'logistics:about' %}" class="btn btn-success btn-lg px-4 py-2">Learn More</a>
+        </div>
+    </div>
+</div>
+
+<!-- What We Do -->
+<section class="py-5 bg-light">
+    <div class="container py-1">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <h2 class="mb-4 text-success">What We Do</h2>
+                <p class="lead">We provide comprehensive logistics solutions for the agricultural sector, ensuring fresh
+                    produce reaches markets efficiently and sustainably.</p>
+                <p>Our services include temperature-controlled transportation, storage solutions, supply chain
+                    optimization, and real-time tracking systems. We specialize in handling perishable goods with the
+                    care they deserve.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Farm-to-market transportation
+                    </li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Cold chain management</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Supply chain optimization
+                    </li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Real-time tracking &
+                        analytics</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i> Sustainable packaging solutions</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="rounded overflow-hidden shadow-lg">
+                    <img src="{% static 'images/what-we-do.jpg' %}" alt="Agricultural Logistics" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Impact -->
+<section class="py-5">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2">
+                <h2 class="mb-4 text-success">Our Impact</h2>
+                <p class="lead">Transforming agricultural logistics for a sustainable future.</p>
+                <p>Through our innovative solutions, we've reduced food waste by 35% for our partners and decreased
+                    transportation emissions by 28%. Our technology-driven approach ensures transparency and efficiency
+                    throughout the supply chain.</p>
+                <div class="row mt-4">
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="display-4 fw-bold text-success">35%</div>
+                        <div class="text-muted">Reduction in Waste</div>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="display-4 fw-bold text-success">28%</div>
+                        <div class="text-muted">Lower Emissions</div>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="display-4 fw-bold text-success">99%</div>
+                        <div class="text-muted">On-Time Delivery</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="rounded overflow-hidden shadow-lg">
+                    <img src="{% static 'images/impact.jpg' %}" alt="Impact" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Buyers/Investors -->
+<section class="py-5 bg-light">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <h2 class="mb-4 text-success">For Buyers & Investors</h2>
+                <p class="lead">Partner with us to access premium agricultural products and sustainable investment
+                    opportunities.</p>
+                <p>We connect buyers directly with trusted producers, ensuring quality and traceability. For investors,
+                    we offer opportunities in sustainable agriculture logistics with strong growth potential and
+                    measurable impact.</p>
+                <div class="d-flex mt-4">
+                    <a href="{% url 'logistics:contact' %}" class="btn btn-success me-3">Become a Buyer</a>
+                    <a href="{% url 'logistics:contact' %}" class="btn btn-outline-success">Investment Opportunities</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="rounded overflow-hidden shadow-lg">
+                    <img src="{% static 'images/buyers.jpg' %}" alt="Buyers and Investors" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
